@@ -8,45 +8,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Карьера в Монете - присоединяйтесь к нашей команде">
   <link rel="preload" href="src/assets/images/img/hero.png" as="image">
+  <link rel="stylesheet" href="src/index.css" />
+  <link href='https://fonts.googleapis.com/css?family=Wix Madefor Display' rel='stylesheet'>
   <title>Карьера</title>
 </head>
 
 <body>
   <!--<div id="root"></div>-->
   <div class="intro">
-    <header>
+    <header class="header">
       <span>
         <a href="https://www.moneta.ru">
-          <img src="src/assets/images/icons/moneta-logo.svg" alt="logo" />
+          <img class="logo" src="src/assets/images/icons/moneta-logo.svg" alt="logo" />
         </a>
       </span>
-      <div class="menu">
-        <div class="menu_content">
-          <nav class="menu_items">
-            <a href="#">Бизнесу</a>
-            <a href="#">Физлицам</a>
-            <a href="#">Документация</a>
-            <a href="#">О нас</a>
-            <a href="#">Контакты</a>
-          </nav>
-          <div class="menu_buttons">
-            <div>
-              <a href="#login">Войти</a>
-            </div>
-            <div>
-              <a href="#signup">Зарегистрироваться</a>
-            </div>
-          </div>
-        </div>
+      <nav class="nav">
+        <a class="nav__link nav__link_head" href="#">Бизнесу</a>
+        <a class="nav__link nav__link_head" href="#">Физлицам</a>
+        <a class="nav__link nav__link_head" href="#">Документация</a>
+        <a class="nav__link nav__link_head" href="#">О нас</a>
+        <a class="nav__link nav__link_head" href="#">Контакты</a>
+      </nav>
+      <div class="login">
+        <button class="button login__button">Войти</button>
+        <button class="button login__button">Регистрация</button>
       </div>
     </header>
-    <img src="src/assets/images/img/hero.png" alt="Hero" />
+    <div>
+      <img src="src/assets/images/img/hero.png" alt="Hero" />
+    </div>
   </div>
-  <main>
-    <nav>
-      <button>О компании</button>
-      <button>Вакансии</button>
-    </nav>
+  <main class="main">
+    <div class="content-select">
+      <button class="button content__button">О компании</button>
+      <button class="button content__button">Вакансии</button>
+    </div>
     <div class="content">
       <!-- Company info -->
       <section>
@@ -612,12 +608,12 @@
       <div class="company">
         <span>
           <a href="https://www.moneta.ru">
-            <img src="src/assets/images/icons/moneta-logo.svg" alt="logo" />
+            <img class="logo" src="src/assets/images/icons/moneta-logo.svg" alt="logo" />
           </a>
         </span>
         <span> © 2005 — 2023 НКО «МОНЕТА» (ООО) </span>
       </div>
-      <nav class="footer_menu">
+      <nav class="nav footer_menu">
         <ul>
           <li><a href="#">О нас</a></li>
           <li><a href="#">Бизнесу</a></li>
