@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 h1 {
   display: block;
   font-size: 0;
@@ -38,14 +43,61 @@ img {
   height: 100%;
 }
 
+.intro__img {
+  max-width: 1440px;
+  max-height: 382px;
+}
+
 .icon-about {
   width: 60px;
   height: 60px;
 }
 
+.icon-welcome {
+  width: 280px;
+  height: 150px;
+}
+
 .icon-vacancies {
   width: 32px;
   height: 32px;
+}
+
+.icon-vacancies-container {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 119px;
+  height: 44px;
+}
+
+.vk-logo {
+  width: 37ox;
+  height: 36px;
+}
+
+.card__img {
+  width: 640px;
+  height: 366px;
+  border-radius: 34px;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-width: 320px;
+  max-width: 1440px;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Wix Madefor Display", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  background-color: #f4f6f8;
 }
 
 /* Header*/
@@ -57,16 +109,6 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo {
-  width: 119px;
-  height: 44px;
-}
-
-.vk-logo {
-  width: 37ox;
-  height: 36px;
 }
 
 .nav {
@@ -104,6 +146,7 @@ img {
   background: rgba(0, 128, 200, 0.1);
   color: rgba(0, 128, 200, 1);
   height: 100%;
+  cursor: pointer;
 }
 
 button:active {
@@ -111,13 +154,15 @@ button:active {
   color: #ffffff;
 }
 
-.login__button {
-  width: 134px;
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  transition: border-color 0.25s;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
+.login__button {
+  width: 134px;
 }
 
 .content__buttons {
@@ -135,6 +180,241 @@ button:active {
 
 .content__button:first-child {
   border-radius: 8px 0 0 8px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 80px 0;
+}
+
+.article {
+  padding: 20px 0;
+}
+
+.article__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+}
+
+.article__content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.article__descr {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dashboard__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 305px;
+  height: 198px;
+  gap: 10px;
+  border-radius: 34px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.dashboard__cipfer {
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 105%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.descr {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  margin-top: 10px;
+}
+
+.dashboard__descr {
+  max-width: 150px;
+  height: 56px;
+  text-align: center;
+}
+
+.blue-text {
+  color: #0080c8;
+}
+
+.team-img {
+  border-radius: 29px;
+}
+
+.top-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 630px;
+  height: 330px;
+}
+
+.bottom-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 414px;
+  height: 374px;
+}
+
+.card-title-container {
+  margin-top: 24px;
+  margin-bottom: 2px;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+.story-cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /*height: 366px;*/
+}
+
+.story-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.story-card__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  width: 623px;
+  margin-bottom: 20px;
+}
+
+.story-card__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  width: 623px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  margin: 20px 0 0;
+}
+
+.game-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Добавляем отступ между карточками */
+  width: 100%;
+  max-width: 809px;
+  margin: 0 auto;
+}
+
+.game-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #0080c8;
+  border-radius: 34px;
+  background: white;
+  margin-bottom: 20px; /* Дополнительный отступ */
+}
+
+.game-stage_num {
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  color: #0080c8;
+  flex-shrink: 0; /* предотвращает сжатие */
+}
+
+.game-stage_title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #0080c8;
+}
+
+.game-stage_descr {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  margin-top: 10px;
+}
+
+.welcome-card {
+  height: 310px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+  padding: 60px 80px;
+  background: linear-gradient(90deg, #b9e6ff 0%, #e7f7ff 100%);
+}
+
+.welcome-text-container {
+  width: 753px;
+  height: 116px;
+}
+
+.welcome-text {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  color: #0080c8;
+}
+
+footer {
+  margin-top: 120px;
+  padding: 80px 80px 60px;
+  width: 100%;
+  height: 268px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_row {
+  display: flex;
+  flex-direction: column;
 }
 
 :root {
@@ -160,44 +440,9 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  min-width: 320px;
-  max-width: 1440px;
-  width: 100%;
-  min-height: 100vh;
-  font-family: "Wix Madefor Display", Helvetica, Arial, sans-serif;
-  font-style: normal;
-}
-
-.intro {
-}
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
