@@ -38,6 +38,16 @@ img {
   height: 100%;
 }
 
+.icon-about {
+  width: 60px;
+  height: 60px;
+}
+
+.icon-vacancies {
+  width: 32px;
+  height: 32px;
+}
+
 /* Header*/
 .header {
   padding: 0 80px;
@@ -50,9 +60,13 @@ img {
 }
 
 .logo {
-  top: 34px;
   width: 119px;
   height: 44px;
+}
+
+.vk-logo {
+  width: 37ox;
+  height: 36px;
 }
 
 .nav {
@@ -106,9 +120,9 @@ button:active {
   flex-direction: column;
 }
 
-.content-select {
+.content__buttons {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   max-width: 277px;
   max-height: 44px;
   width: 100%;
