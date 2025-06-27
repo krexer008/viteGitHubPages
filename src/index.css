@@ -815,17 +815,17 @@ dialog .modal-greetings-content {
   background: #ffffff;
   gap: 20px;
   border-radius: 34px;
+  padding: 24px;
+}
+
+.greetings-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.greetings-card {
   width: 100%;
   height: 100%;
-  padding: 24px;
-  position: relative;
 }
 
 .greetings-descr {
@@ -833,7 +833,15 @@ dialog .modal-greetings-content {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0%;
-  text-align: center;
+}
+
+.greetings-title{
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0%;
+text-align: center;
+
 }
 
 footer {
